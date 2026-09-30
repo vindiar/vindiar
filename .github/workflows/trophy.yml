@@ -23,14 +23,9 @@ jobs:
         uses: Erik-Donath/github-profile-trophy@master
         with:
           username: ${{ github.repository_owner }}
-          file: dist/trophy.svg
+          output_path: dist/trophy.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           theme: dracula
-          max-rows: 1
-          margin-width: 8
-          margin-height: 8
-          no-background: false
-          no-frame: false
 
       - name: Push trophy.svg to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
